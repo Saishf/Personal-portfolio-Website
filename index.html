@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/68fb5511d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmeun()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hello, I'm <span>Saish</span> <br />Fatangare From India</h1>
+        </div>
+      </div>
+    </div>
+    <!------------------------About------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1"><img src="images/user.jpg" /></div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1><br>
+            <p class="aboutme">
+              Hello there! I'm <b>Saish Fatangare</b>, a passionate frontend developer currently in my third year, pursuing a degree in Electronics and Telecommunication Engineering at Vishwakarma Institute of Technology Pune. My journey into the world of web development started with a genuine curiosity and has evolved into a deep passion for crafting engaging and interactive user interfaces.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              
+                  <ul>
+                    <li> <img class="langlogo" src="images/html.png" alt="">   HTML - 90%</li><div id="baro"> <div id="bari"></div></div>
+                    <li><img class="langlogo" src="images/css.png" alt=""> CSS - 70% </li> <div id="baroc"> <div id="baric"></div></div>
+                    <li><img class="langlogo" src="images/js.png" alt=""> JAVASCRIPT - 50%</li> <div id="barojs"> <div id="barijs"></div></div>
+                    <li><img class="langlogo" src="images/java.jpg" alt=""> JAVA - 70%</li> <div id="baroj"> <div id="barij"></div></div>
+                  </ul>
+                
+            
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul id="exptext">
+                <li>
+                  Throughout my academic journey at VIT Pune, I've been immersed in various web development projects that have allowed me to apply and enhance my skills. Here are some key highlights: <br> <br>
+
+                 <span> E-commerce Website</span>: Developed a  e-commerce platform using HTML and CSS. design and implement responsive user interfaces, resulting in a user-friendly shopping experience.
+                   <br><br>
+                 <span> Personal Portfolio</span> : Designed and implemented my personal portfolio website, showcasing a collection of projects and skills. Implemented responsive design principles, ensuring optimal user experience across different devices.
+                  <br><br>
+                  <span>Tic Tac Toe Game</span>: Created an interactive Tic Tac Toe game using HTML, CSS, and JavaScript. Implemented game logic to ensure a fair and enjoyable gaming experience. Applied responsive design principles to make the game accessible across various devices
+                </li>
+                
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Degree</span>: Bachelor of Technology in Electronics and Telecommunication Engineering
+                  <br><br>
+                  <span>College</span>: Vishwakarma Institute of Technology Pune <br>
+                  <br>
+                  <span>Year</span>: 3rd year
+                  
+                </li>
+              
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------services-------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-titles">Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Developer</h2>
+            <p>
+              Passionate front-end developer crafting visually stunning and user-centric websites with expertise in HTML, CSS, and JavaScript, ensuring seamless and engaging user experiences
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI UX designer</h2>
+            <p>
+              Creative UI/UX designer dedicated to enhancing digital experiences through thoughtful design, blending aesthetics with usability to create visually appealing and intuitive interfaces.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              eligendi incidunt nesciunt expedita blanditiis provident obcaecati
+              harum odio voluptatem sit.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------portfolio--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <p>
+                Engineered a dynamic E-commerce website , delivering seamless navigation and integrated payment gateways for a smooth shopping experience.
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="" />
+            <div class="layer">
+              <h3>Tic Tac Toe Game</h3>
+              <p>
+                Designed and developed an interactive Tic Tac Toe game website with HTML, CSS, and JavaScript for a fun and engaging user experience
+              </p>
+              <a href="https://github.com/Saishf/Tic-Tac-Toe-Game"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Tip Calculator</h3>
+              <p>
+                Crafted a sleek Tip Calculator website using HTML, CSS for quick and intuitive bill-splitting experiences
+              </p>
+              <a href="https://github.com/Saishf/Tip-Calculator"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------------contact------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>fatangaresaish30@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+919356894542</p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/saishfatangare?utm_source=qr&igsh=azZpeGw2MmJmNTVx"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://x.com/fatangaresaish?t=7b0JTwT6b58a1DG3NKuAcw&s=35"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a href="https://github.com/Saishf"
+                ><i class="fa-brands fa-github-alt"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saish-fatangare-63787a228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download="" class="btn btn2"
+              >Download CV
+            </a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Id"
+                required
+              />
+              <input
+                type="number"
+                name="Number"
+                placeholder="Contact Number"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copySaishf. Made With <i class="fa-solid fa-heart"></i> by
+          Saish Fatangare
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzdcl0-ThGRb01fxKdhvV4in45KyvfVQHQpZqZBfxTp-RQfFQj5NT_HshhMR_8xOa319A/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message Sent Successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmeun(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+  </body>
+</html>
